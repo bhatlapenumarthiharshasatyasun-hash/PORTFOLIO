@@ -1,244 +1,39 @@
-#hero {
-  height: 100vh;
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.85)
-    ),
-    url("images/HARSHAFILMS.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  padding-left: 80px;
-}
-
-   #hero {
-  height: 100vh;
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.85)
-    ),
-    url("images/HARSHAFILMS.png");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  padding-left: 80px;
-}
-
-}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background: #000;
-    color: #fff;
-}
-
-/* NAVBAR */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0,0,0,0.8);
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 26px;
-    font-weight: 700;
-    color: #e60000;
-}
-
-nav ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #e60000;
+  background: #000;
+  color: #fff;
 }
 
 /* HERO */
 #hero {
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&q=80&w=2100') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    padding-left: 80px;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-#hero h1 {
-    font-size: 52px;
-    margin-bottom: 15px;
-}
-
-#hero p {
-    font-size: 20px;
-    margin-bottom: 25px;
-}
-
-.btn {
-    padding: 12px 28px;
-    background: #e60000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ff0000;
-}
-
-/* SECTIONS */
-section {
-    padding: 100px 60px;
-}
-
-h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
-    color: #e60000;
-}
-
-/* PROJECTS */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.project-card {
-    background: #111;
-    padding: 20px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: scale(1.03);
-    border: 1px solid #e60000;
-}
-
-.thumb {
-    height: 180px;
-    background: #222;
-    border-radius: 6px;
-    margin-bottom: 12px;
-}
-
-/* CONTACT */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 450px;
-}
-
-form input, textarea {
-    padding: 12px;
-    background: #111;
-    border: 1px solid #444;
-    color: #fff;
-}
-
-form button {
-    padding: 12px;
-    background: #e60000;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-form button:hover {
-    background: #ff0000;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #111;
-    color: #666;
-}
-#hero {
   height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.85)
+    ),
+    url("images/HARSHAFILMS.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   padding-left: 80px;
-  background: radial-gradient(circle at center, #0b1025, #000);
 }
 
+/* HERO TEXT */
 #hero h1 {
-  font-size: 3.5rem;
-  letter-spacing: 3px;
-  background: linear-gradient(90deg, #ff2e2e, #00f7ff);
-  -webkit-background-clip: text;
-  color: transparent;
+  font-size: 52px;
 }
 
 #hero p {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  opacity: 0.85;
-}
-
-.hero-content {
-  animation: heroEntry 1.5s ease forwards;
-}
-
-@keyframes heroEntry {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 30px;
-  border: 1px solid #ff2e2e;
-  color: #ff2e2e;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: 0.4s;
-}
-
-.btn:hover {
-  background: #ff2e2e;
-  color: #000;
-  box-shadow: 0 0 20px #ff2e2e;
+  font-size: 20px;
+  margin-top: 10px;
 }
