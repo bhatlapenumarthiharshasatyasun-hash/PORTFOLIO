@@ -1,4 +1,7 @@
 .hero {
+  min-height: 100vh;
+  background: url("HARSHAFILMS.png") center/cover no-repeat;
+}.hero {
     min-height: 100vh;
     background:
         linear-gradient(
