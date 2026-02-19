@@ -1,39 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background: #000;
-  color: #fff;
-}
-
-/* HERO */
 #hero {
-  height: 100vh;
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.85)
-    ),
-    url("images/HARSHAFILMS.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  padding-left: 80px;
+  justify-content: center;
 }
-
-/* HERO TEXT */
-#hero h1 {
-  font-size: 52px;
+ .hero-content {
+  max-width: 600px;
 }
-
-#hero p {
-  font-size: 20px;
-  margin-top: 10px;
+html {
+  scroll-behavior: smooth;
 }
