@@ -1,5 +1,12 @@
 .hero {
   min-height: 100vh;
+  background: url("HARSHAFILMS.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero {
+  min-height: 100vh;
   background: url("HARSHAFILMS.png") center/cover no-repeat;
 }.hero {
     min-height: 100vh;
