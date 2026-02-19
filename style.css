@@ -15,11 +15,24 @@
   padding-left: 80px;
 }
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
+   #hero {
+  height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.85)
+    ),
+    url("images/HARSHAFILMS.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
 }
 * {
     margin: 0;
