@@ -15,7 +15,7 @@
     <nav>
         <ul>
             <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li> <!-- ADD -->
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
         </ul>
     </nav>
@@ -27,7 +27,7 @@
         <source src="cinematic.mp4" type="video/mp4">
     </video>
 
-    <div class="overlay"></div> <!-- DARK OVERLAY -->
+    <div class="overlay"></div>
 
     <div class="hero-content">
         <h1>Cinematic Vision Meets VFX Creativity</h1>
@@ -41,8 +41,7 @@
     <h2>About Me</h2>
     <p>
         I am Harsha, a passionate Filmmaker and Cinematographer who creates cinematic visuals 
-        with powerful storytelling and VFX creativity. I focus on lighting, emotions, and 
-        high-quality visuals that bring stories to life.
+        with powerful storytelling and VFX creativity.
     </p>
 </section>
 
@@ -51,22 +50,36 @@
     <h2>My Work</h2>
 
     <div class="project-grid">
-        <div class="project-card">
+
+        <!-- CARD 1 -->
+        <div class="project-card" onclick="openVideo('cinematic.mp4')">
             <div class="thumb"></div>
             <h3>Short Film</h3>
         </div>
 
-        <div class="project-card">
+        <!-- CARD 2 -->
+        <div class="project-card" onclick="openVideo('cinematic.mp4')">
             <div class="thumb"></div>
             <h3>Cinematic Shots</h3>
         </div>
 
-        <div class="project-card">
+        <!-- CARD 3 -->
+        <div class="project-card" onclick="openVideo('cinematic.mp4')">
             <div class="thumb"></div>
             <h3>VFX Work</h3>
         </div>
+
     </div>
 </section>
+
+<!-- 🎬 VIDEO POPUP -->
+<div id="videoPopup" class="video-popup">
+    <span class="close" onclick="closeVideo()">×</span>
+    <video id="popupVideo" controls autoplay></video>
+</div>
+
+<!-- ✅ SCRIPT LINK -->
+<script src="script.js"></script>
 
 </body>
 </html>
