@@ -6,7 +6,10 @@
     scroll-behavior:smooth;
 }
 
-/* 🔥 HERO PAGE */
+/* =========================
+   🔥 PAGE 1 - HERO (VIDEO)
+========================= */
+
 .hero{
     position:relative;
     width:100vw;
@@ -24,40 +27,35 @@
     object-fit:cover;
 }
 
-/* Scroll button */
-.scroll-btn{
-    position:absolute;
-    bottom:40px;
-    left:50%;
-    transform:translateX(-50%);
-    padding:12px 25px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:5px;
-}
+/* =========================
+   🎬 PAGE 2 - SERVICES
+========================= */
 
-.scroll-btn.dark{
-    background:black;
-    color:white;
-}
-
-/* 🔥 PAGE 2 */
 .page2{
     height:100vh;
-    background:#111;
+    background: url("b783b0c6b3aea8a6215b2b7672252900.jpg") center/cover no-repeat;
     color:white;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
+    position:relative;
 }
 
-.page2 h1{
-    font-size:40px;
-    margin-bottom:30px;
+.page2::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.page2 *{
+    position:relative;
+    z-index:2;
 }
 
 .cards{
@@ -65,6 +63,7 @@
     gap:20px;
     flex-wrap:wrap;
     justify-content:center;
+    margin-top:20px;
 }
 
 .card{
@@ -75,31 +74,48 @@
     width:180px;
 }
 
-/* 🔥 PAGE 3 */
+/* =========================
+   🎥 PAGE 3 - ABOUT
+========================= */
+
 .page3{
     height:100vh;
-    background:#000;
+    background: url("c33e4e1507781d945bf12d06784588b2.jpg") center/cover no-repeat;
     color:white;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
+    position:relative;
 }
 
-.page3 h1{
-    font-size:35px;
-    margin-bottom:20px;
+.page3::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+}
+
+.page3 *{
+    position:relative;
+    z-index:2;
 }
 
 .page3 p{
     max-width:700px;
     line-height:1.6;
     opacity:0.9;
+    margin-top:15px;
 }
 
-/* Social */
+/* =========================
+   🔗 SOCIAL BUTTONS
+========================= */
+
 .social{
     margin-top:25px;
     display:flex;
@@ -119,4 +135,26 @@
 .social a:hover{
     background:white;
     color:black;
+}
+
+/* =========================
+   🔘 SCROLL BUTTON
+========================= */
+
+.scroll-btn{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    padding:12px 25px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+.scroll-btn.dark{
+    background:black;
+    color:white;
 }
