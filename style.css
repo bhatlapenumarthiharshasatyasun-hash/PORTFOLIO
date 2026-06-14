@@ -1,56 +1,17 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-    scroll-behavior:smooth;
-}
-
-/* ================= HERO ================= */
-.hero{
-    width:100%;
-    height:100vh;
-    position:relative;
-    overflow:hidden;
-}
-
-.hero video{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    min-width:100%;
-    min-height:100%;
-    object-fit:cover;
-}
-
-/* EXPLORE BUTTON */
-.scroll-btn{
-    position:absolute;
-    bottom:40px;
-    left:50%;
-    transform:translateX(-50%);
-    padding:12px 25px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:5px;
-}
-
-/* ================= PAGE 2 ================= */
 .page2{
     width:100%;
     height:100vh;
-    background:url("DUNE.jpg") center/cover no-repeat;
-    position:relative;
+    background: url("DUNE.jpg") center/cover no-repeat;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    text-align:center;
     color:white;
+    position:relative;
 }
 
+/* dark overlay */
 .page2::before{
     content:"";
     position:absolute;
@@ -63,54 +24,36 @@
     z-index:2;
 }
 
+/* title */
+.page2 h1{
+    font-size:45px;
+    margin-bottom:40px;
+    letter-spacing:3px;
+}
+
+/* boxes */
 .box-container{
     display:flex;
     gap:20px;
-    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .box{
-    padding:20px;
-    background:rgba(0,0,0,0.7);
-    border:1px solid white;
-}
-
-/* ================= PAGE 3 ================= */
-.page3{
-    width:100%;
-    height:100vh;
-    background:url("ABOUT.jpg") center/cover no-repeat;
-    position:relative;
+    width:220px;
+    height:140px;
+    background:rgba(0,0,0,0.6);
+    border:1px solid rgba(255,255,255,0.3);
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
-    color:white;
-    text-align:center;
+    font-weight:bold;
+    letter-spacing:2px;
+    transition:0.3s;
 }
 
-.page3::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.65);
-}
-
-.page3 *{
-    position:relative;
-    z-index:2;
-}
-
-/* SOCIAL */
-.social{
-    margin-top:20px;
-}
-
-.social a{
-    color:white;
-    text-decoration:none;
-    margin:10px;
-    border:1px solid white;
-    padding:10px;
-    display:inline-block;
+.box:hover{
+    transform:scale(1.1);
+    background:white;
+    color:black;
 }
