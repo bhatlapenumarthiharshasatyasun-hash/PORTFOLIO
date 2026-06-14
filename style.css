@@ -6,7 +6,7 @@
     scroll-behavior:smooth;
 }
 
-/* 🔥 PAGE 1 */
+/* 🔥 PAGE 1 VIDEO */
 .hero{
     position:relative;
     width:100vw;
@@ -38,10 +38,15 @@
     font-weight:bold;
 }
 
-/* 🔥 PAGE 2 FIX */
+.scroll-btn.dark{
+    background:black;
+    color:white;
+}
+
+/* 🔥 PAGE 2 BACKGROUND */
 .page2{
     height:100vh;
-    background: url("page2.jpg") center/cover no-repeat;
+    background: url("DUNE.jpg") center/cover no-repeat;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -63,6 +68,7 @@
     z-index:2;
 }
 
+/* CARDS */
 .cards{
     display:flex;
     gap:20px;
@@ -75,10 +81,10 @@
     border-radius:10px;
 }
 
-/* 🔥 PAGE 3 FIX */
+/* 🔥 PAGE 3 BACKGROUND */
 .page3{
     height:100vh;
-    background: url("page3.jpg") center/cover no-repeat;
+    background: url("ABOUT.jpg") center/cover no-repeat;
     display:flex;
     flex-direction:column;
     justify-content:center;
