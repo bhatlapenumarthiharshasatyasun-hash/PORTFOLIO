@@ -5,129 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Harsha Films</title>
 
-<style>
-html{
-    scroll-behavior:smooth;
-    margin:0;
-    padding:0;
-}
-
-/* HERO */
-.hero{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-}
-
-.hero video{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    min-width:100%;
-    min-height:100%;
-    object-fit:cover;
-}
-
-.scroll-btn{
-    position:absolute;
-    bottom:40px;
-    left:50%;
-    transform:translateX(-50%);
-    padding:12px 25px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:5px;
-}
-
-/* PAGE 2 */
-#page2{
-    height:100vh;
-    background:url("page2.jpg") center/cover no-repeat;
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    position:relative;
-}
-
-#page2::before{
-    content:"";
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.6);
-}
-
-#page2 *{
-    position:relative;
-    z-index:2;
-}
-
-.cards{
-    display:flex;
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    padding:20px;
-    background:#222;
-    border-radius:10px;
-}
-
-/* PAGE 3 */
-#page3{
-    height:100vh;
-    background:url("page3.jpg") center/cover no-repeat;
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    position:relative;
-}
-
-#page3::before{
-    content:"";
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.65);
-}
-
-#page3 *{
-    position:relative;
-    z-index:2;
-}
-
-.social{
-    margin-top:25px;
-    display:flex;
-    gap:20px;
-}
-
-.social a{
-    color:white;
-    text-decoration:none;
-    padding:10px 15px;
-    border:1px solid white;
-    border-radius:5px;
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- 🔥 HERO PAGE -->
+<!-- 🔥 PAGE 1 (ONLY VIDEO, NO TEXT) -->
 <section class="hero">
 
     <video autoplay muted loop playsinline>
@@ -139,7 +22,7 @@ html{
 </section>
 
 <!-- 🎬 PAGE 2 -->
-<section id="page2">
+<section id="page2" class="page2">
 
     <h1>OUR SERVICES</h1>
 
@@ -149,29 +32,22 @@ html{
         <div class="card">POSTER DESIGN</div>
     </div>
 
-    <a href="#page3" class="scroll-btn" style="background:black;color:white;position:relative;margin-top:30px;">ABOUT</a>
+    <a href="#page3" class="scroll-btn dark">ABOUT</a>
 
 </section>
 
 <!-- 🎥 PAGE 3 -->
-<section id="page3">
+<section id="page3" class="page3">
 
     <h1>ABOUT HARSHA FILMS</h1>
 
-    <p style="max-width:700px;margin-top:15px;opacity:0.9;">
-        We transform ideas into cinematic experiences. From visual storytelling and cinematography to VFX, editing, and creative design, every project is crafted with passion and precision.
+    <p>
+        We transform ideas into cinematic experiences. From visual storytelling and cinematography to VFX, editing, and creative design.
     </p>
 
     <div class="social">
-
-        <a href="https://www.instagram.com/hxrshaaaaaaaa/" target="_blank">
-            INSTAGRAM
-        </a>
-
-        <a href="https://www.youtube.com/@bhatlapenumarthiharsha" target="_blank">
-            YOUTUBE
-        </a>
-
+        <a href="https://www.instagram.com/hxrshaaaaaaaa/" target="_blank">INSTAGRAM</a>
+        <a href="https://www.youtube.com/@bhatlapenumarthiharsha" target="_blank">YOUTUBE</a>
     </div>
 
 </section>
