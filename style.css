@@ -6,7 +6,7 @@
     scroll-behavior:smooth;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 .hero{
     width:100%;
     height:100vh;
@@ -24,7 +24,7 @@
     object-fit:cover;
 }
 
-/* EXPLORE BUTTON */
+/* BUTTON */
 .scroll-btn{
     position:absolute;
     bottom:40px;
@@ -38,17 +38,17 @@
     border-radius:5px;
 }
 
-/* ================= PAGE 2 ================= */
+/* PAGE 2 */
 .page2{
     width:100%;
     height:100vh;
     background:url("DUNE.jpg") center/cover no-repeat;
-    position:relative;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     color:white;
+    position:relative;
 }
 
 .page2::before{
@@ -75,18 +75,18 @@
     border:1px solid white;
 }
 
-/* ================= PAGE 3 ================= */
+/* PAGE 3 */
 .page3{
     width:100%;
     height:100vh;
     background:url("ABOUT.jpg") center/cover no-repeat;
-    position:relative;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     color:white;
     text-align:center;
+    position:relative;
 }
 
 .page3::before{
@@ -99,11 +99,6 @@
 .page3 *{
     position:relative;
     z-index:2;
-}
-
-/* SOCIAL */
-.social{
-    margin-top:20px;
 }
 
 .social a{
