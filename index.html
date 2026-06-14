@@ -1,56 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harsha Films</title>
+.page2{
+    width:100%;
+    height:100vh;
+    background: url("DUNE.jpg") center/cover no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
 
-<link rel="stylesheet" href="style.css">
-</head>
+/* dark overlay */
+.page2::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+}
 
-<body>
+.page2 *{
+    position:relative;
+    z-index:2;
+}
 
-<!-- 🔥 PAGE 1 (VIDEO) -->
-<section class="hero">
+/* title */
+.page2 h1{
+    font-size:45px;
+    margin-bottom:40px;
+    letter-spacing:3px;
+}
 
-    <video autoplay muted loop playsinline>
-        <source src="WELCOME_TO_HARSHA_FILMS_text_202606141719[1].mp4" type="video/mp4">
-    </video>
+/* boxes */
+.box-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
 
-    <a href="#page2" class="scroll-btn">EXPLORE</a>
+.box{
+    width:220px;
+    height:140px;
+    background:rgba(0,0,0,0.6);
+    border:1px solid rgba(255,255,255,0.3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    letter-spacing:2px;
+    transition:0.3s;
+}
 
-</section>
-
-<!-- 🎬 PAGE 2 -->
-<section id="page2" class="page2">
-
-    <h1>OUR SERVICES</h1>
-
-    <div class="cards">
-        <div class="card">SHORT FILMS</div>
-        <div class="card">STORY TELLING</div>
-        <div class="card">POSTER DESIGN</div>
-    </div>
-
-    <a href="#page3" class="scroll-btn dark">ABOUT</a>
-
-</section>
-
-<!-- 🎥 PAGE 3 -->
-<section id="page3" class="page3">
-
-    <h1>ABOUT HARSHA FILMS</h1>
-
-    <p>
-        We transform ideas into cinematic experiences. Visual storytelling, cinematography, VFX, editing and creative design.
-    </p>
-
-    <div class="social">
-        <a href="https://www.instagram.com/hxrshaaaaaaaa/" target="_blank">INSTAGRAM</a>
-        <a href="https://www.youtube.com/@bhatlapenumarthiharsha" target="_blank">YOUTUBE</a>
-    </div>
-
-</section>
-
-</body>
-</html>
+.box:hover{
+    transform:scale(1.1);
+    background:white;
+    color:black;
+}
