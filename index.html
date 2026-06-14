@@ -1,59 +1,15 @@
-.page2{
-    width:100%;
-    height:100vh;
-    background: url("DUNE.jpg") center/cover no-repeat;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-    position:relative;
-}
+<section id="page2" class="page2">
 
-/* dark overlay */
-.page2::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.6);
-}
+    <h1>MY WORKS</h1>
 
-.page2 *{
-    position:relative;
-    z-index:2;
-}
+    <div class="box-container">
 
-/* title */
-.page2 h1{
-    font-size:45px;
-    margin-bottom:40px;
-    letter-spacing:3px;
-}
+        <div class="box">SHORT FILMS</div>
+        <div class="box">STORY TELLING</div>
+        <div class="box">POSTER DESIGN</div>
 
-/* boxes */
-.box-container{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
+    </div>
 
-.box{
-    width:220px;
-    height:140px;
-    background:rgba(0,0,0,0.6);
-    border:1px solid rgba(255,255,255,0.3);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-weight:bold;
-    letter-spacing:2px;
-    transition:0.3s;
-}
+    <a href="#page3" class="scroll-btn dark">ABOUT</a>
 
-.box:hover{
-    transform:scale(1.1);
-    background:white;
-    color:black;
-}
+</section>
