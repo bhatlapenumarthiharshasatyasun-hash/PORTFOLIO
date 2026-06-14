@@ -6,10 +6,7 @@
     scroll-behavior:smooth;
 }
 
-/* =========================
-   🔥 PAGE 1 - HERO (VIDEO)
-========================= */
-
+/* HERO */
 .hero{
     position:relative;
     width:100vw;
@@ -27,13 +24,10 @@
     object-fit:cover;
 }
 
-/* =========================
-   🎬 PAGE 2 - SERVICES
-========================= */
-
+/* PAGE 2 */
 .page2{
     height:100vh;
-    background: url("b783b0c6b3aea8a6215b2b7672252900.jpg") center/cover no-repeat;
+    background: url("page2.jpg") center/cover no-repeat;
     color:white;
     display:flex;
     flex-direction:column;
@@ -46,8 +40,6 @@
 .page2::before{
     content:"";
     position:absolute;
-    top:0;
-    left:0;
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.6);
@@ -61,26 +53,19 @@
 .cards{
     display:flex;
     gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
     margin-top:20px;
 }
 
 .card{
     padding:20px;
     background:#222;
-    border:1px solid #444;
     border-radius:10px;
-    width:180px;
 }
 
-/* =========================
-   🎥 PAGE 3 - ABOUT
-========================= */
-
+/* PAGE 3 */
 .page3{
     height:100vh;
-    background: url("c33e4e1507781d945bf12d06784588b2.jpg") center/cover no-repeat;
+    background: url("page3.jpg") center/cover no-repeat;
     color:white;
     display:flex;
     flex-direction:column;
@@ -93,8 +78,6 @@
 .page3::before{
     content:"";
     position:absolute;
-    top:0;
-    left:0;
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.65);
@@ -105,17 +88,6 @@
     z-index:2;
 }
 
-.page3 p{
-    max-width:700px;
-    line-height:1.6;
-    opacity:0.9;
-    margin-top:15px;
-}
-
-/* =========================
-   🔗 SOCIAL BUTTONS
-========================= */
-
 .social{
     margin-top:25px;
     display:flex;
@@ -125,22 +97,11 @@
 .social a{
     color:white;
     text-decoration:none;
-    font-weight:bold;
     padding:10px 15px;
     border:1px solid white;
-    border-radius:5px;
-    transition:0.3s;
 }
 
-.social a:hover{
-    background:white;
-    color:black;
-}
-
-/* =========================
-   🔘 SCROLL BUTTON
-========================= */
-
+/* BUTTONS */
 .scroll-btn{
     position:absolute;
     bottom:40px;
@@ -150,7 +111,6 @@
     background:white;
     color:black;
     text-decoration:none;
-    font-weight:bold;
     border-radius:5px;
 }
 
