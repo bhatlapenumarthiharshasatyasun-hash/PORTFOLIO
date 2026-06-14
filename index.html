@@ -5,49 +5,104 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Harsha Films</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* Video */
+.hero video{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    min-width:100%;
+    min-height:100%;
+    object-fit:cover;
+}
+
+/* Dark overlay */
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+/* Content */
+.content{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+h1{
+    font-size:60px;
+    letter-spacing:4px;
+}
+
+p{
+    margin-top:15px;
+    font-size:18px;
+    opacity:0.9;
+}
+
+a{
+    margin-top:25px;
+    padding:12px 25px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+a:hover{
+    background:red;
+    color:white;
+}
+</style>
+
 </head>
 
 <body>
 
-<!-- 🔥 HERO PAGE -->
 <section class="hero">
 
     <video autoplay muted loop playsinline>
-        <source src="intro.mp4" type="video/mp4">
+        <source src="WELCOME_TO_HARSHA_FILMS_text_202606141719[1].mp4" type="video/mp4">
     </video>
 
-    <a href="#page2" class="scroll-btn">EXPLORE</a>
+    <div class="overlay"></div>
 
-</section>
+    <div class="content">
+        <h1>HARSHA FILMS</h1>
 
-<!-- 🎬 PAGE 2 -->
-<section id="page2" class="page2">
+        <p>
+            Cinematographer • Filmmaker • VFX<br>
+            Editor • Poster Designer • Visual Storyteller
+        </p>
 
-    <h1>OUR SERVICES</h1>
-
-    <div class="cards">
-        <div class="card">SHORT FILMS</div>
-        <div class="card">STORY TELLING</div>
-        <div class="card">POSTER DESIGN</div>
-    </div>
-
-    <a href="#page3" class="scroll-btn dark">ABOUT</a>
-
-</section>
-
-<!-- 🎥 PAGE 3 -->
-<section id="page3" class="page3">
-
-    <h1>ABOUT HARSHA FILMS</h1>
-
-    <p>
-        We transform ideas into cinematic experiences. From visual storytelling and cinematography to VFX, editing, and creative design, every project is crafted with passion, precision, and creativity.
-    </p>
-
-    <div class="social">
-        <a href="https://www.instagram.com/hxrshaaaaaaaa/" target="_blank">INSTAGRAM</a>
-        <a href="https://www.youtube.com/@bhatlapenumarthiharsha" target="_blank">YOUTUBE</a>
+        <a href="#">Explore My Work</a>
     </div>
 
 </section>
