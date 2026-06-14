@@ -2,15 +2,15 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial;
     scroll-behavior:smooth;
 }
 
-/* 🔥 PAGE 1 VIDEO */
+/* HERO */
 .hero{
-    position:relative;
-    width:100vw;
+    width:100%;
     height:100vh;
+    position:relative;
     overflow:hidden;
 }
 
@@ -34,32 +34,26 @@
     background:white;
     color:black;
     text-decoration:none;
-    border-radius:5px;
     font-weight:bold;
 }
 
-.scroll-btn.dark{
-    background:black;
-    color:white;
-}
-
-/* 🔥 PAGE 2 BACKGROUND */
+/* PAGE 2 */
 .page2{
+    width:100%;
     height:100vh;
-    background: url("DUNE.jpg") center/cover no-repeat;
+    background:url("DUNE.jpg") center/cover no-repeat;
+    position:relative;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     color:white;
-    position:relative;
 }
 
 .page2::before{
     content:"";
     position:absolute;
-    width:100%;
-    height:100%;
+    inset:0;
     background:rgba(0,0,0,0.6);
 }
 
@@ -68,37 +62,35 @@
     z-index:2;
 }
 
-/* CARDS */
-.cards{
+.box-container{
     display:flex;
     gap:20px;
-    margin-top:20px;
 }
 
-.card{
+.box{
     padding:20px;
-    background:#222;
-    border-radius:10px;
+    background:rgba(0,0,0,0.6);
+    border:1px solid white;
 }
 
-/* 🔥 PAGE 3 BACKGROUND */
+/* PAGE 3 */
 .page3{
+    width:100%;
     height:100vh;
-    background: url("ABOUT.jpg") center/cover no-repeat;
+    background:url("ABOUT.jpg") center/cover no-repeat;
+    position:relative;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     color:white;
-    position:relative;
     text-align:center;
 }
 
 .page3::before{
     content:"";
     position:absolute;
-    width:100%;
-    height:100%;
+    inset:0;
     background:rgba(0,0,0,0.65);
 }
 
@@ -108,16 +100,10 @@
 }
 
 /* SOCIAL */
-.social{
-    margin-top:25px;
-    display:flex;
-    gap:20px;
-}
-
 .social a{
     color:white;
     text-decoration:none;
-    padding:10px 15px;
+    margin:10px;
     border:1px solid white;
-    border-radius:5px;
+    padding:10px;
 }
