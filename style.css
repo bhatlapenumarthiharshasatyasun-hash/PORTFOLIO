@@ -6,7 +6,7 @@
     scroll-behavior:smooth;
 }
 
-/* 🔥 HERO */
+/* 🔥 PAGE 1 */
 .hero{
     position:relative;
     width:100vw;
@@ -34,11 +34,11 @@
     background:white;
     color:black;
     text-decoration:none;
-    font-weight:bold;
     border-radius:5px;
+    font-weight:bold;
 }
 
-/* PAGE 2 */
+/* 🔥 PAGE 2 FIX */
 .page2{
     height:100vh;
     background: url("page2.jpg") center/cover no-repeat;
@@ -46,7 +46,6 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    text-align:center;
     color:white;
     position:relative;
 }
@@ -76,7 +75,7 @@
     border-radius:10px;
 }
 
-/* PAGE 3 */
+/* 🔥 PAGE 3 FIX */
 .page3{
     height:100vh;
     background: url("page3.jpg") center/cover no-repeat;
@@ -84,9 +83,9 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    text-align:center;
     color:white;
     position:relative;
+    text-align:center;
 }
 
 .page3::before{
