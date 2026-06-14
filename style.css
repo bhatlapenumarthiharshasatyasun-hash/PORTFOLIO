@@ -29,6 +29,7 @@ color:white;
 
 .content h1{
 font-size:80px;
+letter-spacing:5px;
 }
 
 .content p{
@@ -42,4 +43,5 @@ background:#ff9900;
 color:white;
 text-decoration:none;
 border-radius:30px;
+margin-top:20px;
 }
