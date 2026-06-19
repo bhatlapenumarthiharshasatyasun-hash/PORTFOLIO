@@ -11,7 +11,6 @@ background:#f5f5f5;
 }
 
 /* ===== PAGE 1 ===== */
-
 .hero{
 height:100vh;
 position:relative;
@@ -104,13 +103,15 @@ cursor:pointer;
 }
 /* PAGE 2 TO 5 */
 
+/* PAGE 2 TO 5 */
+
 .section{
     min-height:100vh;
     background:#f6f6f6;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:100px;
+    padding:0 100px;
 }
 
 .left{
@@ -149,13 +150,14 @@ cursor:pointer;
 }
 
 .right{
-    width:50%;
+    width:55%;
     display:flex;
     justify-content:center;
+    align-items:center;
 }
 
 .right img{
-    width:100%;
-    max-width:800px;
-    border-radius:30px;
+    width:130%;
+    max-width:none;
+    object-fit:contain;
 }
