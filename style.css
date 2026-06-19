@@ -102,18 +102,15 @@ padding:18px 35px;
 border-radius:50px;
 cursor:pointer;
 }
-
-/* ===== PAGE 2 TO 5 ===== */
-
 /* PAGE 2 TO 5 */
 
 .section{
     min-height:100vh;
+    background:#f6f6f6;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:100px;
-    background:#f6f6f6;
 }
 
 .left{
@@ -128,31 +125,37 @@ cursor:pointer;
 }
 
 .left h1{
-    font-size:80px;
-    line-height:85px;
+    font-size:85px;
+    line-height:90px;
+    color:#111;
     margin-bottom:30px;
 }
 
 .left p{
     font-size:20px;
     line-height:38px;
-    color:#444;
+    color:#555;
 }
 
 .left button{
     margin-top:40px;
     background:black;
     color:white;
-    padding:18px 40px;
     border:none;
+    padding:18px 40px;
     border-radius:50px;
+    font-size:18px;
+    cursor:pointer;
 }
 
 .right{
     width:50%;
+    display:flex;
+    justify-content:center;
 }
 
 .right img{
     width:100%;
-    max-width:750px;
+    max-width:800px;
+    border-radius:30px;
 }
