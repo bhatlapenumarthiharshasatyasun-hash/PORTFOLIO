@@ -10,9 +10,7 @@ body{
     background:#f5f5f5;
 }
 
-/* =======================
-   PAGE 1 (HERO)
-======================= */
+/* ================= HERO ================= */
 
 .hero{
     height:100vh;
@@ -20,7 +18,6 @@ body{
     background:url("harshafilms.jpg");
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
 }
 
 .vertical-line{
@@ -58,18 +55,12 @@ body{
 .title h3{
     font-size:22px;
     letter-spacing:8px;
-    font-weight:400;
 }
 
 .title h1{
     font-size:130px;
     line-height:110px;
     color:#111;
-}
-
-.title p{
-    margin-top:20px;
-    letter-spacing:5px;
 }
 
 .about-card{
@@ -83,39 +74,16 @@ body{
     box-shadow:0 15px 40px rgba(0,0,0,.1);
 }
 
-.red-line{
-    width:50px;
-    height:4px;
-    background:red;
-    margin:20px 0;
-}
-
-.about-card p{
-    line-height:32px;
-    color:#444;
-}
-
-.about-card button{
-    margin-top:25px;
-    background:#111;
-    color:white;
-    border:none;
-    padding:18px 35px;
-    border-radius:50px;
-    cursor:pointer;
-}
-
-/* =======================
-   PAGE 2 TO 5 (COMMON)
-======================= */
+/* ================= PAGES 2–5 ================= */
 
 .section{
-    min-height:100vh;
-    background:#f6f6f6;
+    height:100vh;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0 100px;
+    background:#f6f6f6;
+    transition:all 0.8s ease;
 }
 
 .left{
@@ -124,16 +92,12 @@ body{
 
 .left h5{
     color:#b40000;
-    font-size:15px;
     letter-spacing:3px;
-    margin-bottom:20px;
 }
 
 .left h1{
     font-size:85px;
     line-height:90px;
-    color:#111;
-    margin-bottom:30px;
 }
 
 .left p{
@@ -143,17 +107,14 @@ body{
 }
 
 .left button{
-    margin-top:40px;
+    margin-top:30px;
+    padding:15px 35px;
+    border-radius:50px;
+    border:none;
     background:black;
     color:white;
-    border:none;
-    padding:18px 40px;
-    border-radius:50px;
-    font-size:18px;
     cursor:pointer;
 }
-
-/* RIGHT IMAGE */
 
 .right{
     width:55%;
@@ -164,8 +125,49 @@ body{
 }
 
 .right img{
-    width:220%;
-    max-width:none;
-    object-fit:contain;
-    margin-left:-60%;
+    width:100%;
+    height:80vh;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+/* ================= ANIMATION ================= */
+
+.section{
+    opacity:0;
+    transform:translateY(80px);
+}
+
+.section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.section{
+    flex-direction:column;
+    padding:40px 20px;
+    text-align:center;
+}
+
+.left, .right{
+    width:100%;
+}
+
+.title h1{
+    font-size:60px;
+    line-height:65px;
+}
+
+.about-card{
+    width:90%;
+    left:5%;
+}
+
+.right img{
+    height:50vh;
+}
 }
