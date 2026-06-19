@@ -14,7 +14,7 @@ body{
     position:relative;
 
     /* Background Image */
-    background-image:url("./images/harshafilms.jpg");
+    background-image:url("harshafilms.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -38,7 +38,7 @@ body{
     margin-left:-6px;
 }
 
-/* Top Red Text */
+/* Top Name */
 .top-name{
     position:absolute;
     top:50px;
@@ -75,7 +75,7 @@ body{
     letter-spacing:6px;
 }
 
-/* Left Card */
+/* About Card */
 .about-card{
     position:absolute;
     left:150px;
