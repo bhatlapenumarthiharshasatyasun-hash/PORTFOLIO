@@ -1,107 +1,114 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins, sans-serif;
 }
 
 body{
-overflow-x:hidden;
-background:#f5f5f5;
+    overflow-x:hidden;
+    background:#f5f5f5;
 }
 
-/* ===== PAGE 1 ===== */
+/* =======================
+   PAGE 1 (HERO)
+======================= */
+
 .hero{
-height:100vh;
-position:relative;
-background:url("harshafilms.jpg");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+    height:100vh;
+    position:relative;
+    background:url("harshafilms.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .vertical-line{
-position:absolute;
-left:90px;
-top:50px;
-height:700px;
-width:2px;
-background:#777;
+    position:absolute;
+    left:90px;
+    top:50px;
+    height:700px;
+    width:2px;
+    background:#777;
 }
 
 .dot{
-width:15px;
-height:15px;
-background:#b40000;
-border-radius:50%;
-margin-left:-6px;
+    width:15px;
+    height:15px;
+    background:#b40000;
+    border-radius:50%;
+    margin-left:-6px;
 }
 
 .top-name{
-position:absolute;
-top:50px;
-left:150px;
-color:#c40000;
-font-size:14px;
-letter-spacing:5px;
+    position:absolute;
+    top:50px;
+    left:150px;
+    color:#c40000;
+    font-size:14px;
+    letter-spacing:5px;
 }
 
 .title{
-position:absolute;
-top:120px;
-left:150px;
+    position:absolute;
+    top:120px;
+    left:150px;
 }
 
 .title h3{
-font-size:22px;
-letter-spacing:8px;
-font-weight:400;
+    font-size:22px;
+    letter-spacing:8px;
+    font-weight:400;
 }
 
 .title h1{
-font-size:130px;
-line-height:110px;
-color:#111;
+    font-size:130px;
+    line-height:110px;
+    color:#111;
 }
 
 .title p{
-margin-top:20px;
-letter-spacing:5px;
+    margin-top:20px;
+    letter-spacing:5px;
 }
 
 .about-card{
-position:absolute;
-left:150px;
-bottom:100px;
-width:360px;
-padding:35px;
-background:#fff;
-border-radius:30px;
-box-shadow:0 15px 40px rgba(0,0,0,.1);
+    position:absolute;
+    left:150px;
+    bottom:100px;
+    width:360px;
+    padding:35px;
+    background:#fff;
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
 }
 
 .red-line{
-width:50px;
-height:4px;
-background:red;
-margin:20px 0;
+    width:50px;
+    height:4px;
+    background:red;
+    margin:20px 0;
 }
 
 .about-card p{
-line-height:32px;
-color:#444;
+    line-height:32px;
+    color:#444;
 }
 
 .about-card button{
-margin-top:25px;
-background:#111;
-color:white;
-border:none;
-padding:18px 35px;
-border-radius:50px;
-cursor:pointer;
+    margin-top:25px;
+    background:#111;
+    color:white;
+    border:none;
+    padding:18px 35px;
+    border-radius:50px;
+    cursor:pointer;
 }
-/* PAGE 2 TO 5 */
+
+/* =======================
+   PAGE 2 TO 5 (COMMON)
+======================= */
+
 .section{
     min-height:100vh;
     background:#f6f6f6;
@@ -146,16 +153,19 @@ cursor:pointer;
     cursor:pointer;
 }
 
+/* RIGHT IMAGE */
+
 .right{
-    width:50%;
+    width:55%;
     display:flex;
     justify-content:center;
     align-items:center;
+    overflow:hidden;
 }
 
 .right img{
-    width:100%;
-    max-width:700px;
+    width:220%;
+    max-width:none;
     object-fit:contain;
-    display:block;
+    margin-left:-60%;
 }
