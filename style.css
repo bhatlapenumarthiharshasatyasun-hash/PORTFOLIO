@@ -102,7 +102,6 @@ border-radius:50px;
 cursor:pointer;
 }
 /* PAGE 2 TO 5 */
-
 /* PAGE 2 TO 5 */
 
 .section{
@@ -150,14 +149,15 @@ cursor:pointer;
 }
 
 .right{
-    width:55%;
+    width:50%;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .right img{
-    width:130%;
-    max-width:none;
+    width:100%;
+    max-width:700px;
     object-fit:contain;
+    display:block;
 }
