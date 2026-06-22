@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Poppins, sans-serif;
+    font-family:Poppins,sans-serif;
 }
 
 body{
@@ -18,6 +18,7 @@ body{
     background:url("harshafilms.jpg");
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
 }
 
 .vertical-line{
@@ -74,37 +75,31 @@ body{
     box-shadow:0 15px 40px rgba(0,0,0,.1);
 }
 
-/* ================= PAGES ================= */
+/* ================= PAGE 2-5 ================= */
 
 .section{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 100px;
+    padding:0 80px;
     background:#f6f6f6;
-    opacity:0;
-    transform:translateY(80px);
-    transition:all 0.8s ease;
-}
-
-.section.show{
-    opacity:1;
-    transform:translateY(0);
 }
 
 .left{
-    width:40%;
+    width:42%;
 }
 
 .left h5{
     color:#b40000;
     letter-spacing:3px;
+    margin-bottom:20px;
 }
 
 .left h1{
     font-size:85px;
     line-height:90px;
+    margin-bottom:30px;
 }
 
 .left p{
@@ -116,29 +111,27 @@ body{
 .left button{
     margin-top:30px;
     padding:15px 35px;
-    border-radius:50px;
     border:none;
+    border-radius:50px;
     background:black;
     color:white;
     cursor:pointer;
 }
 
-/* RIGHT IMAGE FIX (FINAL CINEMATIC) */
+/* IMAGE */
 
 .right{
-    width:55%;
-    height:100vh;
-    overflow:hidden;
+    width:45%;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .right img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
+    width:auto;
+    height:85vh;
+    max-width:100%;
+    object-fit:contain;
     border-radius:25px;
     display:block;
 }
@@ -151,27 +144,41 @@ body{
     padding:20px;
 }
 
+.title{
+    left:20px;
+}
+
 .title h1{
     font-size:60px;
     line-height:65px;
 }
 
-.section{
-    flex-direction:column;
-    padding:40px 20px;
-    text-align:center;
-}
-
-.left, .right{
-    width:100%;
-}
-
 .about-card{
     width:90%;
     left:5%;
+    bottom:40px;
+}
+
+.section{
+    flex-direction:column;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.left h1{
+    font-size:55px;
+    line-height:60px;
 }
 
 .right img{
-    height:50vh;
+    width:100%;
+    height:auto;
+    max-height:60vh;
 }
+
 }
