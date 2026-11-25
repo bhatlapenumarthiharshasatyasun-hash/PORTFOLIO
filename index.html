@@ -178,6 +178,14 @@ footer{padding:25px 9%;display:flex;justify-content:space-between;color:#777;fon
  <span>© 2026 HARSHA FILMS</span>
  <span>EVERY FRAME HAS A PURPOSE.</span>
 </footer>
+<!-- VIDEO POPUP -->
+<div id="videoPopup" class="video-popup"
+     onclick="if(event.target === this) closeVideo()">
 
+  <button class="close-video" onclick="closeVideo()">✕</button>
+
+  <video id="popupVideo" controls playsinline></video>
+
+</div>
 </body>
 </html>
