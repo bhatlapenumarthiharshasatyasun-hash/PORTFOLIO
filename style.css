@@ -1,184 +1,41 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Poppins,sans-serif;
+
+/* CINEMATIC ANIMATION */
+
+.hero:before {
+  border-color: rgba(226,27,40,0.18);
+  animation: lensPulse 7s ease-in-out infinite;
 }
 
-body{
-    overflow-x:hidden;
-    background:#f5f5f5;
+@keyframes lensPulse {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.06) rotate(8deg);
+    opacity: 1;
+  }
 }
 
-/* ================= HERO ================= */
-
-.hero{
-    height:100vh;
-    position:relative;
-    background:url("harshafilms.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+.hero-content {
+  animation: heroReveal 1.5s ease-out both;
 }
 
-.vertical-line{
-    position:absolute;
-    left:90px;
-    top:50px;
-    height:700px;
-    width:2px;
-    background:#777;
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.dot{
-    width:15px;
-    height:15px;
-    background:#b40000;
-    border-radius:50%;
-    margin-left:-6px;
+.main-btn {
+  transition: all 0.4s ease;
 }
 
-.top-name{
-    position:absolute;
-    top:50px;
-    left:150px;
-    color:#c40000;
-    font-size:14px;
-    letter-spacing:5px;
-}
-
-.title{
-    position:absolute;
-    top:120px;
-    left:150px;
-}
-
-.title h3{
-    font-size:22px;
-    letter-spacing:8px;
-}
-
-.title h1{
-    font-size:130px;
-    line-height:110px;
-    color:#111;
-}
-
-.about-card{
-    position:absolute;
-    left:150px;
-    bottom:100px;
-    width:360px;
-    padding:35px;
-    background:#fff;
-    border-radius:30px;
-    box-shadow:0 15px 40px rgba(0,0,0,.1);
-}
-
-/* ================= PAGE 2-5 ================= */
-
-.section{
-    min-height:100vh;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 80px;
-    background:#f6f6f6;
-}
-
-.left{
-    width:42%;
-}
-
-.left h5{
-    color:#b40000;
-    letter-spacing:3px;
-    margin-bottom:20px;
-}
-
-.left h1{
-    font-size:85px;
-    line-height:90px;
-    margin-bottom:30px;
-}
-
-.left p{
-    font-size:20px;
-    line-height:38px;
-    color:#555;
-}
-
-.left button{
-    margin-top:30px;
-    padding:15px 35px;
-    border:none;
-    border-radius:50px;
-    background:black;
-    color:white;
-    cursor:pointer;
-}
-
-/* IMAGE */
-
-.right{
-    width:45%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.right img{
-    width:auto;
-    height:85vh;
-    max-width:100%;
-    object-fit:contain;
-    border-radius:25px;
-    display:block;
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:768px){
-
-.hero{
-    padding:20px;
-}
-
-.title{
-    left:20px;
-}
-
-.title h1{
-    font-size:60px;
-    line-height:65px;
-}
-
-.about-card{
-    width:90%;
-    left:5%;
-    bottom:40px;
-}
-
-.section{
-    flex-direction:column;
-    text-align:center;
-    padding:40px 20px;
-}
-
-.left,
-.right{
-    width:100%;
-}
-
-.left h1{
-    font-size:55px;
-    line-height:60px;
-}
-
-.right img{
-    width:100%;
-    height:auto;
-    max-height:60vh;
-}
-
+.main-btn:hover {
+  transform: translateY(-5px) scale(1.04);
 }
