@@ -67,6 +67,33 @@ footer{padding:25px 9%;display:flex;justify-content:space-between;color:#777;fon
  .socials{gap:18px;flex-wrap:wrap}
  footer{padding:22px 6%;font-size:8px}
 }
+/* 3D MOUSE MOVEMENT */
+
+.hero-content h1 {
+  transform: perspective(1000px)
+    rotateX(var(--rx, 0deg))
+    rotateY(var(--ry, 0deg));
+  transform-style: preserve-3d;
+  transition: transform 0.18s ease-out;
+  will-change: transform;
+}
+
+.hero-content {
+  transition: translate 0.2s ease-out;
+}
+
+.hero-visual {
+  transition: translate 0.2s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content h1,
+  .hero-content,
+  .hero-visual {
+    transition: none;
+  }
+}
+
 </style>
 </head>
 
